@@ -1,0 +1,79 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  color: #222222;
+}
+
+nav {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  cursor: pointer;
+  background-color: #222222;
+  border-radius: 50%;
+}
+nav .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 15px;
+  gap: 5px;
+}
+nav .menu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #ffd9a8;
+  border-radius: 1px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffd9a8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4vw;
+  align-items: center;
+}
+.content .blank {
+  background-color: #222222;
+  height: 100%;
+  width: 100%;
+}
+.content .text-container {
+  padding: 2vw;
+}
+.content .text-container h1 {
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+.content .text-container #text {
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+.content .text-container button {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .content .blank {
+    height: 50vh;
+  }
+
+  nav {
+    border: 2px solid #ffd9a8;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
